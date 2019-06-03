@@ -5,10 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/App/Scenes/Home.unity
     guid: 1c87e63bb16bf6f4faaba69bf17c1adf
-  - enabled: 1
-    path: Assets/App/Scenes/Test.unity
+  - enabled: 0
+    path: Assets/AppOld/Scenes/Test.unity
     guid: 269e53a931b9e89478cebd651937782d
+  - enabled: 0
+    path: Assets/AppOld/Scenes/Hafenstrasse.unity
+    guid: 6b726de9f808c2f4cb25c40232247aa2
+  - enabled: 0
+    path: Assets/AppOld/Scenes/TestHafen.unity
+    guid: 8bdf730aec072d94aaad01a98d1c49e2
+  - enabled: 0
+    path: Assets/AppOld/Scenes/TestSnap.unity
+    guid: eaf128f493695424a95a66060a22e9a3
+  - enabled: 0
+    path: Assets/AppOld/Scenes/Hafen.unity
+    guid: 71591bc4dc9da214189ce2885c439adb
+  - enabled: 0
+    path: Assets/App/Scenes/Test01.unity
+    guid: df6d1c2d7bbee6e4b80ad7ba024efdd4
+  - enabled: 1
+    path: Assets/App/Scenes/Hafenstrasse.unity
+    guid: 66bdeca9817977c48b6c26c83d6806e1
   m_configObjects: {}

@@ -7,11 +7,11 @@ public class ARController : MonoBehaviour
 {
     public GameObject DetectedPlanePrefab;
 
+    public GameObject Portal;
+
     public Camera FirstPersonCamera;
 
     private bool m_IsQuitting = false;
-
-    public GameObject Portal;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class ARController : MonoBehaviour
     {
         _UpdateApplicationLifecycle();
 
-        // If the player has not touched the screen, we are done with this update.
+        // Check if User touches the screen
         Touch touch;
         if (Input.touchCount < 1 || (touch = Input.GetTouch(0)).phase != TouchPhase.Began)
         {
@@ -38,37 +38,30 @@ public class ARController : MonoBehaviour
 
         if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit))
         {
-            //Let's now place the portal on top of the tracked plane that we touched
-
-            //Enable the portal
             Portal.SetActive(true);
 
-            //Create a new Anchor
             Anchor anchor = hit.Trackable.CreateAnchor(hit.Pose);
 
-            //Set the position of the portal to be the same as the hit position
+            // Postion of the portal = hit position
             Portal.transform.position = hit.Pose.position;
             Portal.transform.rotation = hit.Pose.rotation;
 
-            //We want the portal to face the camera
+            // Portal will face the camera
             Vector3 cameraPosition = FirstPersonCamera.transform.position;
 
-            //The portal should only rotate around the Y axis
+            // Portal
             cameraPosition.y = hit.Pose.position.y;
 
-            //Rotate the portal to face the camera
+            // Rotate the portal to face the camera
             Portal.transform.LookAt(cameraPosition, Portal.transform.up);
 
-            //ARCore will keep understanding the world and update the anchors accordingly hence we need to attach our portal to the anchor
             Portal.transform.parent = anchor.transform;
 
         }
-
-
-
     }
 
     /// Check and update the application lifecycle.
+    /// 
     private void _UpdateApplicationLifecycle()
     {
         // Exit the app when the 'back' button is pressed.
@@ -93,8 +86,7 @@ public class ARController : MonoBehaviour
             return;
         }
 
-        // Quit if ARCore was unable to connect and give Unity some time for the toast to
-        // appear.
+        // Quit if ARCore was unable to connect and give Unity some time for the toast to appear.
         if (Session.Status == SessionStatus.ErrorPermissionNotGranted)
         {
             _ShowAndroidToastMessage("Camera permission is needed to run this application.");
@@ -117,6 +109,7 @@ public class ARController : MonoBehaviour
     }
 
     /// Show an Android toast message.
+  
     private void _ShowAndroidToastMessage(string message)
     {
         AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");

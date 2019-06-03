@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Homescreen : MonoBehaviour
 {
     public GameObject hafenstrasse;
-    public GameObject roemehafen;
+    public GameObject nordtor;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,11 @@ public class Homescreen : MonoBehaviour
             // Check if finger is over a UI element 
             if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
             {
-                if(EventSystem.current.currentSelectedGameObject == (hafenstrasse || roemehafen))
+                if(EventSystem.current.currentSelectedGameObject == hafenstrasse)
+                {
+                    SceneManager.LoadScene("Hafenstrasse");
+                }
+                else if (EventSystem.current.currentSelectedGameObject == nordtor)
                 {
                     SceneManager.LoadScene("Test");
                 }

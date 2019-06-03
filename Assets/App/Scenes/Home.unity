@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 5221188}
   - component: {fileID: 5221187}
   m_Layer: 5
-  m_Name: roemerturm
+  m_Name: nordtor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -749,7 +749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hafenstrasse: {fileID: 2043426552}
-  roemehafen: {fileID: 5221185}
+  nordtor: {fileID: 5221185}
 --- !u!1 &1697514240
 GameObject:
   m_ObjectHideFlags: 0
