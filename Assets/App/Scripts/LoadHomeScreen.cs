@@ -8,6 +8,14 @@ public class LoadHomeScreen : MonoBehaviour
     // Start is called before the first frame update
     public void LoadScene()
     {
-        SceneManager.LoadScene("Home");
+        if (HafenCounter.hafenCounter == 1)
+        {
+            SceneManager.LoadScene("Endroom");
+        }
+
+        else
+        {
+            SceneManager.LoadScene("Home");
+        }
     }
 }

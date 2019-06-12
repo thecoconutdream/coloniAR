@@ -15,9 +15,9 @@ EditorBuildSettings:
     path: Assets/App/Scenes/Hafenstrasse.unity
     guid: 66bdeca9817977c48b6c26c83d6806e1
   - enabled: 1
-    path: Assets/App/Scenes/Test.unity
-    guid: bc6b2f4da0ead364d8d50a097cee0888
-  - enabled: 0
     path: Assets/App/Scenes/Endroom.unity
     guid: 815fd60e8ebfc6042a6b99d225b2b207
+  - enabled: 1
+    path: Assets/App/Scenes/Test.unity
+    guid: bc6b2f4da0ead364d8d50a097cee0888
   m_configObjects: {}
