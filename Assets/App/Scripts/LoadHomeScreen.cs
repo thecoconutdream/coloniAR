@@ -5,12 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class LoadHomeScreen : MonoBehaviour
 {
+    public bool endScene;
     // Start is called before the first frame update
     public void LoadScene()
     {
         if (HafenCounter.hafenCounter == 1 && NordtorCounter.nordtorCounter == 1)
         {
-            SceneManager.LoadScene("Endroom");
+            if (endScene)
+            {
+                SceneManager.LoadScene("Home");
+            }
+            else
+            {
+                SceneManager.LoadScene("Endroom");
+            }
         }
 
         else
