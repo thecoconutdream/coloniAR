@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class LoadHomeScreen : MonoBehaviour
 {
     public bool endScene;
+
+    public static bool endButton;
     // Start is called before the first frame update
     public void LoadScene()
     {
@@ -13,16 +15,19 @@ public class LoadHomeScreen : MonoBehaviour
         {
             if (endScene)
             {
+                endButton = true;
                 SceneManager.LoadScene("Home");
             }
             else
             {
+                endButton = true;
                 SceneManager.LoadScene("Endroom");
             }
         }
 
         else
         {
+            endButton = true;
             SceneManager.LoadScene("Home");
         }
     }
