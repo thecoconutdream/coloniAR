@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CountAction : MonoBehaviour
+public class CountActionNordtor : MonoBehaviour
 {
 
     public static int counter = 0;
@@ -12,3 +12,4 @@ public class CountAction : MonoBehaviour
         counter += 1;
     }
 }
+

@@ -20,9 +20,9 @@ public class TriggerCrown : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        if (CountAction.counter > 0) 
+        if (HafenCounter.hafenCounter == 1 && NordtorCounter.nordtorCounter == 1)
         {
-            if (HafenCounter.hafenCounter == 1 && NordtorCounter.nordtorCounter == 1)
+            if (CountActionHafen.counter > 0 && CountActionNordtor.counter > 0)
             {
                 nordtor.SetActive(false);
                 hafen.SetActive(false);
@@ -37,8 +37,25 @@ public class TriggerCrown : MonoBehaviour
                 claudiaWinning.SetActive(true);
                 crown.SetActive(true);
             }
+            else
+            {
+                nordtor.SetActive(false);
+                hafen.SetActive(false);
+                closed.SetActive(false);
 
-            else if (HafenCounter.hafenCounter == 1 && NordtorCounter.nordtorCounter == 0)
+                claudiaWinning.SetActive(false);
+                claudiaHafen.SetActive(false);
+                claudiaNordtor.SetActive(false);
+                ClaudiaClosed.SetActive(false);
+
+                ClaudiaComplete.SetActive(true);
+                complete.SetActive(true);
+            }
+        }
+
+        else if (HafenCounter.hafenCounter == 1 && NordtorCounter.nordtorCounter == 0)
+        {
+            if (CountActionHafen.counter > 0)
             {
                 nordtor.SetActive(false);
                 closed.SetActive(false);
@@ -52,7 +69,25 @@ public class TriggerCrown : MonoBehaviour
                 hafen.SetActive(true);
             }
 
-            else if (HafenCounter.hafenCounter == 0 && NordtorCounter.nordtorCounter == 1)
+            else
+            {
+                hafen.SetActive(false);
+                nordtor.SetActive(false);
+                complete.SetActive(false);
+
+                ClaudiaComplete.SetActive(false);
+                claudiaHafen.SetActive(false);
+                claudiaNordtor.SetActive(false);
+                claudiaWinning.SetActive(false);
+
+                ClaudiaClosed.SetActive(true);
+                closed.SetActive(true);
+            }
+        }
+
+        else if (HafenCounter.hafenCounter == 0 && NordtorCounter.nordtorCounter == 1)
+        {
+            if (CountActionNordtor.counter > 0)
             {
                 hafen.SetActive(false);
                 closed.SetActive(false);
@@ -64,24 +99,6 @@ public class TriggerCrown : MonoBehaviour
 
                 claudiaNordtor.SetActive(true);
                 nordtor.SetActive(true);
-            }
-
-        }
-        else
-        {
-            if (HafenCounter.hafenCounter == 1 && NordtorCounter.nordtorCounter == 1)
-            {
-                nordtor.SetActive(false);
-                hafen.SetActive(false);
-                closed.SetActive(false);
-
-                claudiaWinning.SetActive(false);
-                claudiaHafen.SetActive(false);
-                claudiaNordtor.SetActive(false);
-                ClaudiaClosed.SetActive(false);
-
-                ClaudiaComplete.SetActive(true);
-                complete.SetActive(true);
             }
             else
             {
@@ -99,5 +116,4 @@ public class TriggerCrown : MonoBehaviour
             }
         }
     }
-
 }
