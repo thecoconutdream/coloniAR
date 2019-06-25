@@ -9,6 +9,7 @@ public class Homescreen : MonoBehaviour
     public GameObject hafenstrasse;
     public GameObject nordtor;
     public GameObject endroom;
+    public GameObject quit;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +41,10 @@ public class Homescreen : MonoBehaviour
                 else if (EventSystem.current.currentSelectedGameObject == endroom)
                 {
                     SceneManager.LoadScene("Endroom");
+                }
+                else if (EventSystem.current.currentSelectedGameObject == quit)
+                {
+                    Application.Quit();
                 }
                 Debug.Log("UI is touched");
                 //so when the user touched the UI(buttons) call your UI methods 
