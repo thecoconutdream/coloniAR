@@ -8,15 +8,22 @@ public class ARController : MonoBehaviour
     public GameObject DetectedPlanePrefab;
 
     public GameObject Portal;
+    public GameObject coloniaAnweisung;
 
     public Camera FirstPersonCamera;
+
+    private static bool wasActive;
 
     private bool m_IsQuitting = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (wasActive == false)
+        {
+            coloniaAnweisung.SetActive(true);
+            wasActive = true;
+        } 
     }
 
     // Update is called once per frame
@@ -39,6 +46,7 @@ public class ARController : MonoBehaviour
         if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit))
         {
             Portal.SetActive(true);
+            coloniaAnweisung.SetActive(false);
 
             Anchor anchor = hit.Trackable.CreateAnchor(hit.Pose);
 

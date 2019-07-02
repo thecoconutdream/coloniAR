@@ -81,8 +81,7 @@ public class TriggerCrown : MonoBehaviour
                 claudiaWinning.SetActive(false);
 
                 ClaudiaClosed.SetActive(true);
-                closed.SetActive(true);
-            }
+                closed.SetActive(true);          }
         }
 
         else if (HafenCounter.hafenCounter == 0 && NordtorCounter.nordtorCounter == 1)

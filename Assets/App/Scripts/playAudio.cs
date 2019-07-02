@@ -5,23 +5,18 @@ using UnityEngine;
 public class playAudio : MonoBehaviour
 {
 
-    public GameObject Audio;
+    public GameObject Information;
     public GameObject CurrentCharacter;
     public GameObject NextCharacter;
 
-
     void OnTriggerStay(Collider collider)
     {
-        Audio.SetActive(true);
-        StartCoroutine(hideCharacter());
-
+        Information.SetActive(true);
     }
 
-    IEnumerator hideCharacter()
+    public void EnableNextCharacter()
     {
-        yield return new WaitForSeconds(3);
-
-        CurrentCharacter.SetActive(false);
         NextCharacter.SetActive(true);
+        CurrentCharacter.SetActive(false);
     }
 }
