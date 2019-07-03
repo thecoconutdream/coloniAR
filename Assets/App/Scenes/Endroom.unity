@@ -12467,7 +12467,7 @@ GameObject:
   - component: {fileID: 1161495227}
   - component: {fileID: 1161495228}
   m_Layer: 0
-  m_Name: colonia_winning
+  m_Name: colonia_complete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12480,12 +12480,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161495226}
-  m_LocalRotation: {x: 0.68720335, y: 0.16658856, z: 0.16658856, w: 0.68720317}
-  m_LocalPosition: {x: 1392.0583, y: 668.45294, z: 3966.8196}
-  m_LocalScale: {x: 0.9161583, y: 1.2344819, z: 0.46266428}
+  m_LocalRotation: {x: 0.68720335, y: 0.16658854, z: 0.16658856, w: 0.68720317}
+  m_LocalPosition: {x: 1392.0632, y: 668.4548, z: 3966.829}
+  m_LocalScale: {x: 0.91616154, y: 1.2344851, z: 0.46266583}
   m_Children: []
-  m_Father: {fileID: 549285368}
-  m_RootOrder: 7
+  m_Father: {fileID: 1307829513}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1161495228
 MonoBehaviour:
@@ -12504,13 +12504,21 @@ MonoBehaviour:
     sentences:
     - "Willkommen in meiner Schatzkammer. Hier bewahre ich alle meine Sch\xE4tze auf.
       Sieh dich in Ruhe um."
+    - 'Wow! Du hast ja mein Amulett gefunden. '
+    - Das ist eine Bulla.
+    - "Wir Kinder im r\xF6mischen Reich tragen diese Gl\xFCcksbringer, damit wir nicht
+      von b\xF6sen Geistern heimgesucht werden."
     - "Auf deinem Streifzug durch die CCAA hast du einen W\xFCrfelbecher, ein M\xFChle-Spiel
       und ein Schiff gefunden. "
-    - "Alles, was du in dieser Truhe findest, darfst du selbstverst\xE4ndlich behalten. "
+    - Als Dank, dass du mein Amulett gefunden hast, darfst du alles, was du in dieser
+      Truhe findest, behalten.
   clips:
   - {fileID: 8300000, guid: a57a25e753b004c44babda18db3020dc, type: 3}
+  - {fileID: 8300000, guid: 93ebbf3eddea81f40bbe94c5acfd86a2, type: 3}
+  - {fileID: 8300000, guid: 121293d5a0ae5fa41bc1bddff4c2c035, type: 3}
+  - {fileID: 8300000, guid: e5643c798b4d74040bedad7497c08268, type: 3}
   - {fileID: 8300000, guid: 9c593ba230981634bb57456027d24d66, type: 3}
-  - {fileID: 8300000, guid: 940c4d35a2a49004593485195e52fad7, type: 3}
+  - {fileID: 8300000, guid: cca5d163982bc4d4d9efe248cfcda82a, type: 3}
 --- !u!1001 &1163428359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30163,7 +30171,7 @@ GameObject:
   - component: {fileID: 2082619960}
   - component: {fileID: 2082619961}
   m_Layer: 0
-  m_Name: colonia_complete
+  m_Name: colonia_winning
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30177,11 +30185,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082619959}
   m_LocalRotation: {x: 0.68720335, y: 0.16658854, z: 0.16658856, w: 0.68720317}
-  m_LocalPosition: {x: 1392.0632, y: 668.4548, z: 3966.829}
-  m_LocalScale: {x: 0.91616154, y: 1.2344851, z: 0.46266583}
+  m_LocalPosition: {x: 1392.0574, y: 668.4536, z: 3966.821}
+  m_LocalScale: {x: 0.9161583, y: 1.2344831, z: 0.4626646}
   m_Children: []
-  m_Father: {fileID: 1307829513}
-  m_RootOrder: 8
+  m_Father: {fileID: 549285368}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2082619961
 MonoBehaviour:
