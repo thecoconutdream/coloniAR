@@ -13,14 +13,14 @@ Additionally Google's ARCore SDK (version 1.9.0) was utilized.
 This project's main goal was the development of an augmented reality application, which is targeted towards children and families. Thematically it is set in the former Roman colony of Colonia Claudia Ara Agrippinensium (CCAA),
 which was located in the modern day city of Cologne, Germany. It attempts to reconstruct famous Roman remains, that are spread throughout the city, providing the user with information in a playful way. 
 The information is relayed through an implemented dialogue system and venture points implemented within each individual scene. The information is narrated by the fictional character Claudia (voiced by *Fine*), a Roman girl,
-who used to live the former Roman colony of CCAA. The app encourages exploration of the environment, as finding information unlocks 
+who used to live in the former Roman colony of CCAA. The app encourages exploration of the environment, as finding information unlocks 
 new rooms to explore. Thus the project leans on the concept of gamification as it provides users with rewards for their various achievements and features several endings based on the user's performance.
 
 
 ![Claudia 3D model](https://trello-attachments.s3.amazonaws.com/5ca4a403dac1e58a86240923/5d237ea8f8866b1b8c202d17/5932bbf22a9355756d60fd681920e25d/claudia.png "A girl named Claudia who lived in Cologne during the times of Roman rule.")
 ![Claudia Concept Art](https://trello-attachments.s3.amazonaws.com/5ca4a403dac1e58a86240923/5d237ea8f8866b1b8c202d17/6becea181b57243f274378970af3a0c7/colonia_w.png "Concept art of Claudia")
 
-3D models were created using information provided by previous attempts of the sites' reconstructions and information provided by the Roman Germanic Museum, which is located in Cologne, Germany.
+3D models were created using information provided by previous attempts of the sites' reconstructions and information provided by the Romano-Germanic Museum, which is located in Cologne, Germany.
 Visually the app implements a comicbook aestehtic as it uses cel-shaded graphics, which aims at making it more appealing towards the younger demographics. This is also evident in the graphics used in the app's title and home screens
 as well as the simple menu navigation.
 
@@ -33,7 +33,6 @@ ___
 The project contains an .apk file and an Unity project. In order to make use of this art installation
 you need an Android phone.  
 Furthermore it includes all the license data regarding images, 3D models, sounds etc. contained in a file.  
-For detailed information and an in-depth outline on the workflow of the conceptualization and development, visit the project's [**Trello board**](https://trello.com/b/9Jg7k3KW/coloniar).
 
 ## Screenshots
 ___
