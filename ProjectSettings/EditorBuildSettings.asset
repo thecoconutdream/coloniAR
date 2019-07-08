@@ -20,7 +20,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/App/Scenes/Endroom.unity
     guid: 815fd60e8ebfc6042a6b99d225b2b207
-  - enabled: 1
-    path: Assets/App/Scenes/Test.unity
-    guid: bc6b2f4da0ead364d8d50a097cee0888
   m_configObjects: {}
